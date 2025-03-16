@@ -23,4 +23,89 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+{/* telephone.tsx */}
+
+.main_img{
+  border-radius: 50%;
+  padding-top:20px;
+  padding-bottom:30px;
+  width:25%;
+  margin: auto;
+}
+
+table{
+  width: 75%;
+  font-size: 32px;
+  border-collapse: separate; 
+  margin: auto;
+}
+
+td{
+  padding:6px;
+}
+
+.bottom{  
+  position: fixed; 
+  right: 20px; 
+  top: 30%; 
+  width:20%;
+  clip-path: ellipse(20% 60% at 50% 50%);
+  background-color: gray;
+  border-radius: 50%;
+
+}
+
+.bottom img{
+  padding:3px;
+  width:30%;
+  border-radius: 50%;
+  margin:auto;
+}
+
+.quiz-text h1{
+  font-size: 32px;
+  padding-top:60px;
+  padding-bottom:80px;
+}
+
+{/* quiz.tsx */}
+
+.quiz_title{
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+.selection{
+  background-color: gray;
+}
+
+.selection h2{
+  font-size: 32px;
+  padding-bottom: 30px;
+}
+
+.selection h3{
+  font-size: 64px;
+  padding-bottom: 30px;
+}
+
+
+.selectnumber{
+
+}
+
+.selectnumber button{
+  padding:36px;
+  font-size: 64px;
+}
+
+.selectnumber button:hover{
+  font-size: 84px;
+  color: black;
+}
+
+#quiz-main{
+  padding-top:32px
 }
