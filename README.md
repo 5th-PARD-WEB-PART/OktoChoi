@@ -4,7 +4,7 @@ PARD 5기 웹파트-웹파디 최옥토
 이번에 만든 웹사이트는 간단한 자기소개로 크게는 총 2페이지로(index, quiz) 구성되어있습니다.
 
 <index.tsl>
-![alt text](index.png)
+![alt text](image.png)
 먼저 index페이지를 살펴보면 간단한 자바스크립트 코드로
 ???에 대해서 저에 대한 정보를 넣을 수 있게 만들어 봤습니다.
 
