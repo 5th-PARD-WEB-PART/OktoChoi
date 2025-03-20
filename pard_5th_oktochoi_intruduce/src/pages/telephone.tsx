@@ -8,7 +8,7 @@ export default function Telephone() {
         <title>전화 번호</title>
       </Head>
       <main>
-        <h1>d </h1>
+        <h1>okto@handong.ac.kr</h1>
       </main>
     </>
   );
