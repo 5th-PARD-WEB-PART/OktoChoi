@@ -14,7 +14,7 @@ interface QuizQuestion extends BaseQuestion {
   answer: string;
 }
 
-// 유틸리티 타입
+// 유틸리티 타입 객체의 속성을 읽기 전용으로 변환, 따라서 questions 배열의 각 객체는 불변 상태
 type ReadonlyQuestion = Readonly<QuizQuestion>;
 
 // 제네릭 함수 (하나의 함수로 여러 타입을 지원함)

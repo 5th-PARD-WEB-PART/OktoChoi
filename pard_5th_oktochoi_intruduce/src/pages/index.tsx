@@ -4,19 +4,22 @@ import { useState } from "react";
 
 export default function Home() {
 
-  //use array, string type(1)
+
+  //use string type
   const [name, setName] = useState("???");
   const [major, setMajor] = useState("???");
   const [age, setAge] = useState("???");
   const [hobby, setHobby] = useState("???");
   const [mbti, setMbti] = useState("???");
 
-  // use number type (2)
-  const nameOrder: number = 1;
-  const majorOrder: number = 2;
-  const ageOrder: number = 3;
-  const hobbyOrder: number = 4;
-  const mbtiOrder: number = 5;
+  // use array type 
+  const num:number[]=[1,2,3,4,5,6];
+
+  //use tuple
+  const StudentID:[number,string]=[22400742,'22400742'];
+
+  // use number type
+  const myage:number = 21;
 
 //onClick 함수 사용, 화살표 함수 사용
   return (
@@ -29,19 +32,22 @@ export default function Home() {
 
         <div className="info-section">
           <h2 className="info-item" onClick={() => setName(prompt("이름을 입력하세요") || name)}>
-            {nameOrder}. 이름: <span className="info-section-item">{name}</span>
+            {num[0]}. 이름: <span className="info-section-item">{name}</span>
           </h2>
           <h2 className="info-item" onClick={() => setMajor(prompt("전공을 입력하세요") || major)}>
-            {majorOrder}. 전공: <span className="info-section-item">{major}</span>
+            {num[1]}. 전공: <span className="info-section-item">{major}</span>
           </h2>
-          <h2 className="info-item" onClick={() => setAge(prompt("나이를 입력하세요") || age)}>
-            {ageOrder}. 나이: <span className="info-section-item">{age}</span>
+          <h2 className="info-item">
+            {num[2]}. 나이: <span className="info-section-item">{myage}</span>
           </h2>
           <h2 className="info-item" onClick={() => setHobby(prompt("취미를 입력하세요") || hobby)}>
-            {hobbyOrder}. 취미: <span className="info-section-item">{hobby}</span>
+            {num[3]}. 취미: <span className="info-section-item">{hobby}</span>
           </h2>
           <h2 className="info-item" onClick={() => setMbti(prompt("MBTI를 입력하세요") || mbti)}>
-            {mbtiOrder}. MBTI:  <span className="info-section-item">{mbti}</span>
+            {num[4]}. MBTI:  <span className="info-section-item">{mbti}</span>
+          </h2>
+          <h2 className="info-item">
+            {num[5]}. StudentID:  <span className="info-section-item">{StudentID[1]}</span>
           </h2>
         </div>
 
