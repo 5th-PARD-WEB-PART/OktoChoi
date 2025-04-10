@@ -1,0 +1,102 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  border-right: 1px solid #4b5563;
+  padding: 16px;
+  z-index: 1000;
+  box-sizing: border-box;     /* ✅ 패딩과 테두리를 포함한 너비 계산 */
+  display: flex;             /* ✅ flex 컨테이너로 만들기 */
+  flex-direction: column;    /* ✅ 세로 정렬 */
+  border-right: 1px solid #262626;
+}
+
+
+  
+  .logo {
+    width:92px;
+    height:26px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  .menu {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    width:195px;
+    height:42px;
+    border-radius: 8px;
+    background-color:#161616 ;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Inter;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .link{
+    width:195px;
+    height:42px;
+    border-radius: 8px;
+    color:white;
+    text-decoration: none;
+    background-color:#161616 ;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Inter;
+    margin-top:3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-left:15px;
+    margin-right: 8px;
+  }
+  
+  .more {
+    margin-top: auto;
+    margin-bottom: 30px;
+  
+    width: 195px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: #161616;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Inter;
+  
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .more span {
+    margin-left: 16px; /* ✅ 띄어쓰기 제거! */
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+
+  .moreicon{
+    padding-left: 4px;
+    width:28px;
+    height:28px;
+
+  }
+
+  
