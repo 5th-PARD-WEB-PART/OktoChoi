@@ -1,13 +1,15 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import styles from './ImageModal.module.css'
 
+// props: 이미지 경로와 닫기 함수
 type Props = {
   src: string
   onClose: () => void
 }
 
+// 댓글 타입 정의
 type Comment = {
   profileImage: string
   username: string
@@ -17,34 +19,25 @@ type Comment = {
 export default function ImageModal({ src, onClose }: Props) {
   const [comments, setComments] = useState<Comment[]>([])
   const [newComment, setNewComment] = useState('')
-  const [loved, setLoved] = useState(false)
+  const [liked, setLiked] = useState(false)
 
-  const LOCAL_STORAGE_KEY = `loved-${src}`
-
-  useEffect(() => {
-    const saved = localStorage.getItem(LOCAL_STORAGE_KEY)
-    if (saved === 'true') {
-      setLoved(true)
-    }
-  }, [src])
-
+  // 댓글 등록
   const handlePost = () => {
     if (newComment.trim() === '') return
 
-    const comment: Comment = {
+    const newItem: Comment = {
       profileImage: '/Avatar.svg',
       username: 'oktorot0',
       content: newComment,
     }
 
-    setComments([...comments, comment])
+    setComments([...comments, newItem])
     setNewComment('')
   }
 
-  const handleLoveClick = () => {
-    const newLoved = !loved
-    setLoved(newLoved)
-    localStorage.setItem(LOCAL_STORAGE_KEY, newLoved.toString())
+  // 좋아요 토글
+  const toggleLike = () => {
+    setLiked(!liked)
   }
 
   return (
@@ -73,9 +66,9 @@ export default function ImageModal({ src, onClose }: Props) {
 
           <div className={styles.iconBar}>
             <img
-              src={loved ? '/reallove.svg' : '/Love.png'}
+              src={liked ? '/reallove.svg' : '/Love.png'}
               className={styles.commentbar}
-              onClick={handleLoveClick}
+              onClick={toggleLike}
             />
             <img src="/comment.jpg" className={styles.commentbar} />
             <img src="/share.jpg" className={styles.commentbar} />
