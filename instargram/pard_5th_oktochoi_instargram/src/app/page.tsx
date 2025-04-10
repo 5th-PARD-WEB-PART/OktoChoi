@@ -26,7 +26,6 @@ export default function RegisterPage() {
 
             <button type="button" className={styles.button}>가입</button>
 
-
           </form>
         </div>
 
