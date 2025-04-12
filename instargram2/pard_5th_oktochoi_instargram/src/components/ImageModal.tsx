@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import styles from './ImageModal.module.css'
 
-// props: 이미지 경로와 닫기 함수
+// props: 이미지 경로와 닫는 함수
 type Props = {
   src: string
   onClose: () => void
@@ -35,7 +35,7 @@ export default function ImageModal({ src, onClose }: Props) {
     setNewComment('')
   }
 
-  // 좋아요 토글
+  // 좋아요!~
   const toggleLike = () => {
     setLiked(!liked)
   }

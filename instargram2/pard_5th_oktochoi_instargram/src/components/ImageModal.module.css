@@ -1,12 +1,11 @@
 .overlay {
-  position: fixed; /* absolute → fixed: 화면 전체를 감지하게 */
+  position: fixed; 
   left: 89px;
   top: 59px;
-  width: 100vw;     /* 전체화면 가로 */
-  height: 100vh;    /* 전체화면 세로 */
-  background-color: transparent; /* 배경 없애서 뒷화면 보이게 */
+  width: 100vw;     
+  height: 100vh;    
+  background-color: transparent; 
   display: flex;
-
   z-index: 1000;
 }
 
