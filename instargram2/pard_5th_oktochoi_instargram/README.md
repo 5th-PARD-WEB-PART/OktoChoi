@@ -1,4 +1,4 @@
-PARD 5기 웹파트 3차 세미나 과제
+![image](https://github.com/user-attachments/assets/5ed68d05-6b2f-4445-8741-d3b19b48c264)PARD 5기 웹파트 3차 세미나 과제
 
 -구조 components에 modal.tsx작성
 ![alt text](image-2.png)
@@ -40,7 +40,9 @@ zustand를 이용해서 연동되게 만들었습니다!!
 ![image](https://github.com/user-attachments/assets/19675f1f-a455-4ee4-b88c-bbb428816804)
 ![image](https://github.com/user-attachments/assets/6ceac8f7-ecdd-4a74-abfd-b8296b85e0bb)
 마찬가지로 프로필 편집을 눌러도 바꿀수 있습니다.
+
 ![image](https://github.com/user-attachments/assets/4d59deed-2d19-491b-902b-3f199cdc1a3c)
+![image](https://github.com/user-attachments/assets/280e9ad7-02ba-4169-b3f3-ac1f61e379aa)
 ![image](https://github.com/user-attachments/assets/e0688877-2c94-451c-8536-b26a8075d22f)
 
 media를 사용해서 구현해봤습니다
