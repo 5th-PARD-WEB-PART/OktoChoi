@@ -141,3 +141,45 @@
     height: 28px;
   }
   
+
+  @media screen and (max-width: 1023px) {
+    .main{
+      margin-left: 0px;
+    }
+    .gridSection {
+      justify-content: flex-start; /* ← 왼쪽 정렬로 변경 */
+      padding-left: 12px;          /* ← 왼쪽에 살짝 여백 주면 보기 좋음 */
+    }
+  
+    .grid {
+      grid-template-columns: repeat(3, 220px);
+      gap:0px;
+    }
+  
+    .post {
+      width: 218px;
+      height: 218px;
+    }
+  }
+  
+  /* 모바일 (639px 이하) */
+  @media screen and (max-width: 639px) {
+    .main{
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+    .gridSection {
+      justify-content: flex-start; /* ← 왼쪽 정렬로 변경 */
+      padding-left: 12px;          /* ← 왼쪽에 살짝 여백 주면 보기 좋음 */
+    }
+  
+    .grid {
+      grid-template-columns: repeat(3, 198px);
+    }
+  
+    .post {
+      width: 198px;
+      height: 198 px;
+    }
+    
+  }

@@ -15,8 +15,6 @@
   border-right: 1px solid #262626;
 }
 
-
-  
   .logo {
     width:92px;
     height:26px;
@@ -99,4 +97,129 @@
 
   }
 
+  @media screen and (min-width: 1024px) {
+    .tabletOnly {
+      display: none;
+    }
+  
+    .desktopOnly {
+      display: block; /* 또는 inline-block, 이미지면 block 추천 */
+    }
+  }
+  
+
+  @media screen and (max-width: 1023px) {
+    .sidebar {
+      width: 72px; /* ✅ 좁은 사이드바 */
+      padding: 16px 8px;
+      align-items: center;  
+    }
+  
+    .logo {
+      width: 24px;
+      height: 24px;
+      padding-bottom: 30px;
+      margin-right:4px;
+    }
+
+    .desktopOnly {
+      display: none;
+    }
+  
+    .menu li,
+    .link,
+    .more {
+      width: 56px;
+      height: 56px;
+      padding: 0;
+      background-color: black;
+      justify-content: center;
+      border-radius: 12px;
+    }
+  
+    .icon{
+      width:22px;
+      height: 22px;
+    }
+    .moreicon {
+      margin: 0;
+      width: 28px;
+      height: 28px;
+    }
+  
+    .menu span,
+    .link span,
+    .more span {
+      display: none; /* ✅ 텍스트 감추기 */
+    }
+  }
+  
+
+  @media screen and (max-width: 639px) {
+    .sidebar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      top: auto; /* ✅ 상단 고정 해제 */
+      width: 100%;
+      height: 60px;
+      background-color: black;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 12px;
+      border-top: 1px solid #262626;
+      border-right: none;
+      z-index: 1000;
+    }
+  
+    .logo {
+      display: none; /* ✅ 로고는 모바일에선 숨김 */
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .menu li {
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    
+    .link,
+    .more {
+      background-color: transparent;
+      width: auto;
+      height: auto;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nomobileOnly {
+      display: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .menu span,
+    .link span,
+    .more span {
+      display: none; 
+    }
+  
+    .icon,
+    .moreicon {
+      width: 28px;
+      height: 28px; 
+    }
+  }
   
