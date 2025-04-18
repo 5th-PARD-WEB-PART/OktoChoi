@@ -13,6 +13,7 @@ export default function InfoEditPage() {
 
   const handleSubmit = () => {
     setName(newName)
+    alert("수정했습니다.")
     router.push('/mypage')
   }
 
