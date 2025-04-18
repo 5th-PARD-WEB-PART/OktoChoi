@@ -32,3 +32,24 @@ onChange={(e) => setNewComment(e.target.value)}
 e =  input 요소에 변화가 생겼을 때 발생하는 이벤트
 e.target.value = 현재 입력된 텍스트 값
 setNewComment를 통해 갱신 
+
+
+#### 4차 과제
+zustand를 이용해서 연동되게 만들었습니다!!
+![image](https://github.com/user-attachments/assets/dd456e54-b253-4ba6-abc3-57da26b1462a)
+![image](https://github.com/user-attachments/assets/19675f1f-a455-4ee4-b88c-bbb428816804)
+![image](https://github.com/user-attachments/assets/6ceac8f7-ecdd-4a74-abfd-b8296b85e0bb)
+마찬가지로 프로필 편집을 눌러도 바꿀수 있습니다.
+![image](https://github.com/user-attachments/assets/4d59deed-2d19-491b-902b-3f199cdc1a3c)
+![image](https://github.com/user-attachments/assets/e0688877-2c94-451c-8536-b26a8075d22f)
+
+media를 사용해서 구현해봤습니다
+태블릿 뷰 
+![image](https://github.com/user-attachments/assets/a0793344-6bd3-4bc3-8371-5ffd87a9ba2b)
+
+모바일 뷰에서 사이드바가 displaynone을 해도 일정 자리를 차지하는 문제가 발생했습니다. ㅠㅠ 
+진짜 많은 걸 해봤는데 해결이 안됩니다..ㅜ
+![image](https://github.com/user-attachments/assets/d2011ab5-24d8-489f-b5b4-15a5128e5471)
+
+감사합니다.~~~~~~~~
+
