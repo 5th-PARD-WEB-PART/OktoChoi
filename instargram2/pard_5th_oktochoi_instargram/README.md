@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/5ed68d05-6b2f-4445-8741-d3b19b48c264)PARD 5기 웹파트 3차 세미나 과제
+![image](https://github.com/user-attachments/assets/8e39cc00-06c9-4658-af56-f561103ef715)![image](https://github.com/user-attachments/assets/5ed68d05-6b2f-4445-8741-d3b19b48c264)PARD 5기 웹파트 3차 세미나 과제
 
 -구조 components에 modal.tsx작성
 ![alt text](image-2.png)
@@ -52,6 +52,10 @@ media를 사용해서 구현해봤습니다
 모바일 뷰에서 사이드바가 displaynone을 해도 일정 자리를 차지하는 문제가 발생했습니다. ㅠㅠ 
 진짜 많은 걸 해봤는데 해결이 안됩니다..ㅜ
 ![image](https://github.com/user-attachments/assets/d2011ab5-24d8-489f-b5b4-15a5128e5471)
+
+
+하지만 고쳤습니다. ㅎㅎㅎ
+![image](https://github.com/user-attachments/assets/8416575e-fddc-4d1c-bf25-8f59d345d28d)
 
 감사합니다.~~~~~~~~
 
