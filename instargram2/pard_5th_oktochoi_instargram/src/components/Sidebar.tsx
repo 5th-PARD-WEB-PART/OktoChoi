@@ -13,15 +13,16 @@ export default function Sidebar() {
         <li><img src="home.png" className={`${styles.icon} ${styles.mobileOnly}`}/><span>홈</span></li>
         <li><img src="search.png" className={`${styles.icon} ${styles.mobileOnly}`} /><span>검색</span></li>
         <li><img src="Navigation Icons.png" className={`${styles.icon} ${styles.mobileOnly}`}/><span>릴스</span></li>
-        <li><img src="Union.png" className={`${styles.icon} ${styles.nomobileOnly}`} /><span>메시지</span></li>
+        <li className={styles.nomobileOnly}><img src="Union.png" className={styles.icon} /><span>메시지</span></li>
         <li><img src="yes.png" className={`${styles.icon} ${styles.mobileOnly}`}/><span>알림</span></li>
-        <li><img src="as.png" className={`${styles.icon} ${styles.nomobileOnly}`} /><span>만들기</span></li>
+        <li className={styles.nomobileOnly}><img src="as.png" className={styles.icon} /><span>만들기</span></li>
         <li>
           <Link href="/mypage" className={styles.link}>
             <img src="Icons.png" className={`${styles.icon} ${styles.mobileOnly}`}/><span>프로필</span>
           </Link>
         </li>
       </ul>
+
 
 
       <div className={styles.more}>
