@@ -22,7 +22,7 @@ export default function RegisterPage() {
         <div className={styles.card}>
           <img src="instargramlogo1.png" className={styles.logo} />
           <p className={styles.subtitle}>
-            친구들의 사진과 동영상을 보려면 가입하세요.
+            친구들의 사진과 동영상을 보려면  가입하세요.
           </p>
 
           <form>
